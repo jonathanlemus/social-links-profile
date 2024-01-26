@@ -57,26 +57,30 @@ body {
     margin-block: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-
 .list--item {
     background-color: var(--Grey);
     padding: 1.2rem;
     margin-block-start: 1rem;
     border-radius: 7.5px 7.5px;
+    list-style-type: none;
 
     font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
-    text-decoration: none;
-    color: var(--White);
 
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .list--item:hover {
     background-color: var(--Green);
+    color: var(--Off-Black);
+}
+.list--item a {
+    text-decoration: none;
+    color: var(--White);
+}
+.list--item a:hover {
     color: var(--Off-Black);
 }
 
